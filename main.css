@@ -1,0 +1,146 @@
+body {
+    font-family: "Jua", sans-serif;
+    line-height: 1.4;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: white
+}
+
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header > .inner {
+    height: 120px;
+    background-color: beige;
+}
+
+header .logo {
+    height: 75px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+}
+
+header .sub-menu {
+    top: 10px;
+    height: 40px;
+    right: 0;
+    position: absolute;
+    display: flex;
+}
+
+header .sub-menu .menu {
+    display: flex;
+    height: 40px;
+}
+
+header .sub-menu .menu li {
+    position: relative;
+}
+
+header .sub-menu .menu li::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 1px;
+    height: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header .sub-menu .menu li:first-child::before {
+    display: none;
+}
+
+header .sub-menu .menu li:last-child {
+    padding: 0px 10px 0px 0px;
+}
+
+header .sub-menu .menu li a {
+    display: block;
+    color: black;
+    height: 20px;
+    padding: 10px;
+}
+
+header .sub-menu .menu li a:hover {
+    color: grey;
+}
+
+header .sub-menu .search {
+    right: 10px;
+    position: relative;
+    height: 40px;
+    align-content: center;
+}
+
+header .sub-menu .search input {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+}
+
+header .sub-menu .search .material-icons {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+}
+
+header .sub-menu .search input:focus {
+    width: 190px;
+}
+
+header .sub-menu .search.focused .material-icons {
+    opacity: 0;
+}
+
+header .main-menu {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header .main-menu .item .item__name {
+    padding: 10px;
+}
+
+header .main-menu .item:hover .item__name {
+    background-color: black;
+    color: beige;
+    border-radius: 10px 10px 0 0;
+}
+
+header .main-menu .item .item__contents{
+    background-color: orange;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: none;
+}
+
+header .main-menu .item:hover .item__contents{
+    display: block;
+}
+
+header .main-menu .item .item__contents .contents__menu {
+    background-color: black;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul {
+    
+}
