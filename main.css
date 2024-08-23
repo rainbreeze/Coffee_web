@@ -9,7 +9,11 @@ a {
 }
 
 header {
-    background-color: white
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
 }
 
 .inner {
@@ -142,5 +146,58 @@ header .main-menu .item .item__contents .contents__menu {
 }
 
 header .main-menu .item .item__contents .contents__menu > ul {
-    
+    display: flex;
+    padding: 20px 5px;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul li {
+    width: 220px;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul li > h4 {
+    padding: 10px 0;
+    color: white;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul li > ul li {
+    color: lightgrey;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul li > ul li:hover {
+    color: orange;
+}
+
+header .main-menu .item .item__contents .contents__texture {
+    padding: 20px 0;
+    background-image: url("./images/main_menu_pattern.jpg");
+}
+
+header .main-menu .item .item__contents .contents__texture h4 {
+    padding: 3px 0;
+    color: lightgray;
+}
+
+header .main-menu .item .item__contents .contents__texture p {
+    padding: 3px 0;
+    color: orange;
+}
+
+header .badges {
+    position: fixed;
+    top: 132px;
+    right: 12px;
+}
+
+header .badges .badge {
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+img {
+    display: block;
 }
