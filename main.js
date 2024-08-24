@@ -30,3 +30,12 @@ window.addEventListener('scroll', function() {
         });
     }
 });
+
+const fadeinElS = document.querySelectorAll('.fade-in');
+
+fadeinElS.forEach(function(fadeinEl, index){
+    gsap.to(fadeinEl, 1, {
+        delay: (index + 1) * .7,
+        opacity : 1
+    });
+});

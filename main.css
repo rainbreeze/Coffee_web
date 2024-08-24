@@ -14,6 +14,7 @@ header {
     top: 0;
     width: 100%;
     border-bottom: 1px solid white;
+    z-index: 9;
 }
 
 .inner {
@@ -200,4 +201,89 @@ header .badges .badge {
 
 img {
     display: block;
+}
+
+.visual {
+    margin-top: 120px;
+    background-image: url(./images/visual_bg.jpg);
+    background-position: center;
+}
+
+.visual > .inner {
+    height: 646px;
+}
+
+.visual .title {
+    position: absolute;
+    top: 40px;
+    left: -10px;
+}
+
+.visual .title .btn {
+    position: absolute;
+    top: 230px;
+    left: 140px;
+}
+
+.visual .cup1.image {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+}
+
+.visual .cup1.text {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+}
+
+.visual .cup2.image {
+    position: absolute;
+    bottom: 0;
+    right: 162px;
+}
+
+.visual .cup2.text {
+    position: absolute;
+    right: 410px;
+    top: 230px;
+}
+
+.visual .spoon {
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+}
+
+.btn {
+    width: 130px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    transition: 1s;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.btn.btn--brown {
+    color: brown;
+    border-color: brown;
+}
+
+.btn.btn--brown:hover {
+    color: white;
+    background-color: brown;
+}
+
+.fade-in {
+    opacity: 0;
 }
