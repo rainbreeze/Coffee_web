@@ -287,3 +287,66 @@ img {
 .fade-in {
     opacity: 0;
 }
+
+.notice {
+    position: relative;
+}
+
+.notice .bg-left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.notice .bg-right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+.notice > .inner {
+    height: 62px;
+    display: flex;
+}
+
+.notice .inner__left {
+    width: 70%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.notice .inner__right {
+    width: 30%;
+    background-color: white;
+}
+
+.notice .inner__left h2 {
+    color: white;
+    margin-right: 20px;
+}
+
+.notice .inner__left .material-icons {
+    color: white;
+    font-size: 30px;
+}
+
+.notice .inner__left .swiper {
+    flex-grow: 1;
+    height: 62px;
+    background-color: orange;
+}
+
+.notice .inner__left .notice-more {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
