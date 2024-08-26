@@ -39,3 +39,9 @@ fadeinElS.forEach(function(fadeinEl, index){
         opacity : 1
     });
 });
+
+new Swiper ('.notice .swiper', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+});

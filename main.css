@@ -340,7 +340,6 @@ img {
 .notice .inner__left .swiper {
     flex-grow: 1;
     height: 62px;
-    background-color: orange;
 }
 
 .notice .inner__left .notice-more {
@@ -349,4 +348,15 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.notice .inner__left .swiper .swiper-slide {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notice .inner__left .swiper .swiper-slide a {
+    color: white;
 }
